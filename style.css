@@ -1,0 +1,264 @@
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #d6dff0;
+}
+
+/* Estilos para o header */
+header {
+    width: 100%;
+    background: #6B89B2;
+    background: linear-gradient(0deg,rgba(107, 137, 178, 1) 0%, rgba(119, 154, 202, 1) 50%, rgba(107, 137, 178, 1) 100%);
+}
+
+.upper_header {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgb(138, 160, 196)
+}
+
+.upper_header img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.upper_header a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.upper_header input[type="text"] {
+    margin-left: auto;
+    padding: 5px;
+    width: 200px;
+}
+
+/* Container principal para os três elementos lado a lado */
+.main-content {
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Estilos para os containers - ORDEM CORRIGIDA AQUI */
+.profile_container {
+    order: 1; /* Esquerda */
+    width: 250px;
+    flex-shrink: 0;
+    background-color: white;
+    padding: 10px;
+}
+
+.main_container {
+    order: 2; /* Centro */
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 10px;
+}
+
+.friends_and_community {
+    order: 3; /* Direita */
+    width: 280px;
+    flex-shrink: 0;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Estilos para o profile container */
+.pfp {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.pfp img {
+    width: 150px;
+    height: 200px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.pfp_buttons a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    padding: 4px;
+    text-align: left;
+    width: 100%;
+    font-weight: lighter;
+    color:gray;
+    text-decoration: none;
+}
+
+.pfp_buttons .first {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.pfp_buttons .second {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.pfp_buttons .third {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+/* Estilos para o main container */
+.info_container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.upper-main {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.lower-main {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.lower-main img{
+    width: 100%;
+    height: 50px
+}
+
+.lower-main .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.lower-main .stats figure {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+.info_container th, .info_container td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.info_container th {
+    width: 30%;
+}
+
+/* Estilos para friends and community */
+.friends, .community {
+    margin-bottom: 30px;
+}
+
+.friends h2, .community h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.friends figure, .community figure {
+    display: inline-block;
+    margin: 0 10px 15px 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+.friends img, .community img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin: 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para o footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Repositórios */
+
+.repo-test {
+    background-color: #ffffff; /* White background like Facebook posts */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 16px; /* Padding inside the post */
+    margin-bottom: 16px; /* Space between posts */
+    font-family: Arial, sans-serif; /* Clean font */
+}
+
+.repo-test h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 8px;
+}
+
+.repo-test p {
+    font-size: 14px;
+    color: #555; /* Slightly lighter text color */
+    margin-bottom: 8px;
+}
+
+.repo-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    border-top: 1px solid #eee; /* Separator line */
+    padding-top: 12px;
+}
+
+.repo-details figure {
+    text-align: center;
+    margin: 0;
+}
+
+.repo-details p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: #777; /* Even lighter text for details */
+}
+
+.repo-test img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 12px;
+}
