@@ -1,12 +1,8 @@
 const username = "jggoncalez";
 const fr = document.getElementById("friendsCont");
 
-// Busca seguidores do usuário
-fetch(`https://api.github.com/users/${username}/followers`, {
-  headers: {
-    Authorization: `token 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`
-  }
-})
+// Busca seguidores do usuário sem token
+fetch(`https://api.github.com/users/${username}/followers`)
   .then(response => {
     if (!response.ok) throw new Error("Erro ao buscar seguidores");
     return response.json();
